@@ -11,7 +11,8 @@
     src: url(./fonts/ChicagoFLF.woff) format("woff");
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 html {
     background: var(--lightestPink);
@@ -60,16 +61,6 @@ header a:hover {
     color: var(--lightPurple);
 }
 
-h1 {
-    color: var(--darkPurple);
-    font-family: "Chicago";
-}
-
-p {
-    color: var(--darkPink);
-    font-family: "Roboto";
-}
-
 #logo-name {
     display: flex;
     align-items: center;
@@ -84,12 +75,63 @@ p {
 
 /* About */
 .column {
-    float: left;
-    overflow: hidden;
+    display: flex;
 }
 
-.column::after {
-    clear: both;
+.left-sidebar {
+    width: 330px;
+    margin-left: 25px;
+    height: 100vh;
+    background-color: var(--lightPink);
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+
+.bio-section {
+    padding: 40px;
+}
+
+.bio-section {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.bio-section img {
+    height: 255px;
+    width: 255px;
+    border-radius: 180px;
+    left: auto;
+}
+
+.bio-section li {
+    list-style-type: none;
+}
+
+.bio-section a,
+.bio-section a:visited {
+    color: white;
+}
+
+.bio-section a:hover {
+    color: var(--lightPurple);
+}
+
+
+img {
+    height: 30px;
+    width: 40px;
+}
+
+
+
+
+
+
+/*
+.column {
+    display: flex;
+    flex-direction: column;
 }
 
 .left-sidebar {
@@ -100,6 +142,8 @@ p {
 }
 
 .blogs-column {
+    display: flex;
+    flex-direction: column;
     padding: 30px;
     border: 5px solid var(--darkPink);
 }
@@ -117,10 +161,8 @@ p {
 .blog {
     margin: 35px;
     width: 490px;
-    height: 650px;
+    height: auto;
     border-radius: 25px;
-    font-family: "Chicago";
-    font-size: 24px;
     background: var(--lightPurple);
 }
 
@@ -128,12 +170,21 @@ p {
     width: 425px;
     height: 345px;
     border-radius: 25px;
-    float: unset;
-    margin: auto;
+    margin: 0px auto;
+    margin-top: 7%;
 }
 
-.blog h2 {
+.blog h1 {
     font-weight: bold;
+    font-size: 22px;
+    margin-left: 8%;
+    font-family: "Chicago";
+}
+
+.blog p {
+    font-size: 18px;
+    font-family: "IBM Plex Mono", monospace;
+    margin-left: 8%;
 }
 
 .bio-section {
@@ -141,14 +192,16 @@ p {
 }
 
 .bio-section {
-    font-family: "Chicago";
-    font-size: 24px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 18px;
+    font-weight: normal;
 }
 
 .bio-section img {
     height: 255px;
     width: 255px;
     border-radius: 180px;
+    left: auto;
 }
 
 .bio-section li {
