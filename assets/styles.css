@@ -117,10 +117,28 @@ header a:hover {
     color: var(--lightPurple);
 }
 
+.blogs-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
-img {
-    height: 30px;
-    width: 40px;
+.blog {
+    margin: 35px;
+    width: 490px;
+    height: auto;
+    max-height:  650px;
+    border-radius: 25px;
+    background: var(--lightPurple);
+}
+
+.blog img {
+    width: 425px;
+    height: 345px;
+    border-radius: 25px;
+    margin: 0px auto;
+    margin-top: 7%;
 }
 
 
